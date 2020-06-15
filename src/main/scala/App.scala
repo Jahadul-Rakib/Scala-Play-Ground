@@ -38,6 +38,22 @@ object App {
       println("for loop i = " + i + "for loop i = " + j);
     }
 
+    //skip any iteration
+    for (i <- 1 to 10 by 2){
+      println("Print From Skip loop " +i);
+    }
+
+    //conditional loop iteration
+    for (i <- 1 to 10 if i > 5){
+      println("Print From conditional loop " + i);
+    }
+
+    //for-each loop
+    val listOfFruites = List("Banana", "Mango", "Apple", "Jackfruits");
+    listOfFruites.foreach(a =>{
+      println("from for each "+a);
+    })
+
     //if else condition
     if (a < 10 || a > 0) {
       println("From If " + a)
